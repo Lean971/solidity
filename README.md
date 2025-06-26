@@ -101,8 +101,8 @@ Realiza un swap de una cantidad fija de un token por su equivalente en otro toke
 **Lógica:**
 - Verifica deadline y que el path tenga longitud 2.
 - Valida que el par de tokens coincida con los configurados en el contrato.
+- - Obtiene reservas.
 - Transfiere el token de entrada desde el usuario al contrato.
-- Obtiene reservas.
 - Verifica que cumpla con el mínimo aceptable.
 - Transfiere el token de salida al usuario.
 
@@ -125,7 +125,7 @@ Calcula el precio de un token en función del otro, usando las reservas actuales
 
 ### 🔹 getAmountOut
 
-Calcula de forma pura (sin acceder a blockchain) cuánto token de salida recibirías por una cantidad de token de entrada, aplicando la fórmula de Uniswap v2 con fee del 0.3%.
+Calcula de forma pura (sin acceder a blockchain) cuánto token de salida recibirías por una cantidad de token de entrada
 
 **Parámetros:**
 - `amountIn`: cantidad de token de entrada.
